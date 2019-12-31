@@ -83,6 +83,8 @@ namespace Project1 {
 			// textBox1
 			// 
 			this->textBox1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
 			this->textBox1->Location = System::Drawing::Point(1, -1);
 			this->textBox1->Multiline = true;
 			this->textBox1->Name = L"textBox1";
@@ -103,6 +105,8 @@ namespace Project1 {
 			this->groupBox1->Controls->Add(this->button3);
 			this->groupBox1->Controls->Add(this->button2);
 			this->groupBox1->Controls->Add(this->button1);
+			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
 			this->groupBox1->Location = System::Drawing::Point(1, 133);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(303, 245);
@@ -111,6 +115,8 @@ namespace Project1 {
 			// 
 			// groupBox2
 			// 
+			this->groupBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
 			this->groupBox2->Location = System::Drawing::Point(184, 133);
 			this->groupBox2->Name = L"groupBox2";
 			this->groupBox2->Size = System::Drawing::Size(199, 245);
