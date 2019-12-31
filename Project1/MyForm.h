@@ -134,6 +134,7 @@ namespace Project1 {
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"1";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
 			// button2
 			// 
@@ -263,5 +264,9 @@ namespace Project1 {
 #pragma endregion
 	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		textBox1->Text = "1";
+	}
+};
 }
