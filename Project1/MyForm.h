@@ -8,6 +8,8 @@ namespace Project1 {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	
+	
 
 	/// <summary>
 	/// Сводка для MyForm
@@ -85,13 +87,13 @@ namespace Project1 {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
-			this->button12 = (gcnew System::Windows::Forms::Button());
-			this->button13 = (gcnew System::Windows::Forms::Button());
-			this->button14 = (gcnew System::Windows::Forms::Button());
-			this->button15 = (gcnew System::Windows::Forms::Button());
-			this->button16 = (gcnew System::Windows::Forms::Button());
-			this->button17 = (gcnew System::Windows::Forms::Button());
 			this->button18 = (gcnew System::Windows::Forms::Button());
+			this->button17 = (gcnew System::Windows::Forms::Button());
+			this->button16 = (gcnew System::Windows::Forms::Button());
+			this->button15 = (gcnew System::Windows::Forms::Button());
+			this->button14 = (gcnew System::Windows::Forms::Button());
+			this->button13 = (gcnew System::Windows::Forms::Button());
+			this->button12 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
@@ -278,55 +280,15 @@ namespace Project1 {
 			this->groupBox2->TabIndex = 0;
 			this->groupBox2->TabStop = false;
 			// 
-			// button12
+			// button18
 			// 
-			this->button12->Location = System::Drawing::Point(6, 19);
-			this->button12->Name = L"button12";
-			this->button12->Size = System::Drawing::Size(75, 50);
-			this->button12->TabIndex = 0;
-			this->button12->Text = L"+";
-			this->button12->UseVisualStyleBackColor = true;
-			this->button12->Click += gcnew System::EventHandler(this, &MyForm::button12_Click);
-			// 
-			// button13
-			// 
-			this->button13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->button13->Location = System::Drawing::Point(87, 19);
-			this->button13->Name = L"button13";
-			this->button13->Size = System::Drawing::Size(75, 50);
-			this->button13->TabIndex = 1;
-			this->button13->Text = L"-";
-			this->button13->UseVisualStyleBackColor = true;
-			// 
-			// button14
-			// 
-			this->button14->Location = System::Drawing::Point(6, 75);
-			this->button14->Name = L"button14";
-			this->button14->Size = System::Drawing::Size(75, 50);
-			this->button14->TabIndex = 2;
-			this->button14->Text = L"*";
-			this->button14->UseVisualStyleBackColor = true;
-			// 
-			// button15
-			// 
-			this->button15->Location = System::Drawing::Point(87, 75);
-			this->button15->Name = L"button15";
-			this->button15->Size = System::Drawing::Size(75, 50);
-			this->button15->TabIndex = 3;
-			this->button15->Text = L"/";
-			this->button15->UseVisualStyleBackColor = true;
-			// 
-			// button16
-			// 
-			this->button16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->button16->Location = System::Drawing::Point(6, 133);
-			this->button16->Name = L"button16";
-			this->button16->Size = System::Drawing::Size(75, 104);
-			this->button16->TabIndex = 4;
-			this->button16->Text = L"=";
-			this->button16->UseVisualStyleBackColor = true;
+			this->button18->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button18.BackgroundImage")));
+			this->button18->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
+			this->button18->Location = System::Drawing::Point(87, 189);
+			this->button18->Name = L"button18";
+			this->button18->Size = System::Drawing::Size(75, 50);
+			this->button18->TabIndex = 6;
+			this->button18->UseVisualStyleBackColor = true;
 			// 
 			// button17
 			// 
@@ -339,15 +301,58 @@ namespace Project1 {
 			this->button17->Text = L".";
 			this->button17->UseVisualStyleBackColor = true;
 			// 
-			// button18
+			// button16
 			// 
-			this->button18->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button18.BackgroundImage")));
-			this->button18->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
-			this->button18->Location = System::Drawing::Point(87, 189);
-			this->button18->Name = L"button18";
-			this->button18->Size = System::Drawing::Size(75, 50);
-			this->button18->TabIndex = 6;
-			this->button18->UseVisualStyleBackColor = true;
+			this->button16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button16->Location = System::Drawing::Point(6, 133);
+			this->button16->Name = L"button16";
+			this->button16->Size = System::Drawing::Size(75, 104);
+			this->button16->TabIndex = 4;
+			this->button16->Text = L"=";
+			this->button16->UseVisualStyleBackColor = true;
+			this->button16->Click += gcnew System::EventHandler(this, &MyForm::button16_Click);
+			// 
+			// button15
+			// 
+			this->button15->Location = System::Drawing::Point(87, 75);
+			this->button15->Name = L"button15";
+			this->button15->Size = System::Drawing::Size(75, 50);
+			this->button15->TabIndex = 3;
+			this->button15->Text = L"/";
+			this->button15->UseVisualStyleBackColor = true;
+			// 
+			// button14
+			// 
+			this->button14->Location = System::Drawing::Point(6, 75);
+			this->button14->Name = L"button14";
+			this->button14->Size = System::Drawing::Size(75, 50);
+			this->button14->TabIndex = 2;
+			this->button14->Text = L"*";
+			this->button14->UseVisualStyleBackColor = true;
+			this->button14->Click += gcnew System::EventHandler(this, &MyForm::button14_Click);
+			// 
+			// button13
+			// 
+			this->button13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button13->Location = System::Drawing::Point(87, 19);
+			this->button13->Name = L"button13";
+			this->button13->Size = System::Drawing::Size(75, 50);
+			this->button13->TabIndex = 1;
+			this->button13->Text = L"-";
+			this->button13->UseVisualStyleBackColor = true;
+			this->button13->Click += gcnew System::EventHandler(this, &MyForm::button13_Click);
+			// 
+			// button12
+			// 
+			this->button12->Location = System::Drawing::Point(6, 19);
+			this->button12->Name = L"button12";
+			this->button12->Size = System::Drawing::Size(75, 50);
+			this->button12->TabIndex = 0;
+			this->button12->Text = L"+";
+			this->button12->UseVisualStyleBackColor = true;
+			this->button12->Click += gcnew System::EventHandler(this, &MyForm::button12_Click);
 			// 
 			// MyForm
 			// 
@@ -419,7 +424,43 @@ namespace Project1 {
 	}
 	private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ e) {
 
-		a = textBox1->Text->ToDouble();
+		a = System::Double::Parse(textBox1->Text);
+		c = '+';
+		textBox1->Text = "";
 	}
+	private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		a = System::Double::Parse(textBox1->Text);
+		c = '-';
+		textBox1->Text = "";
+	}
+	private: System::Void button14_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+		a = System::Double::Parse(textBox1->Text);
+		c = '*';
+		textBox1->Text = "";
+	}
+	private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		b = System::Double::Parse(textBox1->Text);
+		switch (c) {
+			case '+': 
+				textBox1->Text = Convert::ToString(a + b);
+				break;
+			case '-':
+				textBox1->Text = Convert::ToString(a - b);
+				break;
+			case '*':
+				textBox1->Text = Convert::ToString(a * b);
+				break;
+			case '/':
+				try {
+					textBox1->Text = Convert::ToString(a / b);
+				}
+				catch (...) { MessageBox("деление на ноль запрещенно"); }
+				 
+		}
+	}
+
 };
 }
