@@ -57,6 +57,10 @@ namespace Project1 {
 	private: System::Windows::Forms::Button^ button14;
 	private: System::Windows::Forms::Button^ button13;
 	private: System::Windows::Forms::Button^ button12;
+	private: System::Windows::Forms::Button^ button19;
+	private: System::Windows::Forms::Button^ button20;
+	private: System::Windows::Forms::Button^ button21;
+	private: System::Windows::Forms::Button^ button22;
 	protected:
 
 	private:
@@ -94,6 +98,10 @@ namespace Project1 {
 			this->button14 = (gcnew System::Windows::Forms::Button());
 			this->button13 = (gcnew System::Windows::Forms::Button());
 			this->button12 = (gcnew System::Windows::Forms::Button());
+			this->button19 = (gcnew System::Windows::Forms::Button());
+			this->button20 = (gcnew System::Windows::Forms::Button());
+			this->button21 = (gcnew System::Windows::Forms::Button());
+			this->button22 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
@@ -101,12 +109,13 @@ namespace Project1 {
 			// textBox1
 			// 
 			this->textBox1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->textBox1->Dock = System::Windows::Forms::DockStyle::Top;
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->textBox1->Location = System::Drawing::Point(1, -1);
+			this->textBox1->Location = System::Drawing::Point(0, 0);
 			this->textBox1->Multiline = true;
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(707, 128);
+			this->textBox1->Size = System::Drawing::Size(467, 128);
 			this->textBox1->TabIndex = 0;
 			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
 			// 
@@ -125,7 +134,7 @@ namespace Project1 {
 			this->groupBox1->Controls->Add(this->button1);
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->groupBox1->Location = System::Drawing::Point(1, 179);
+			this->groupBox1->Location = System::Drawing::Point(11, 200);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(174, 245);
 			this->groupBox1->TabIndex = 1;
@@ -274,7 +283,7 @@ namespace Project1 {
 			this->groupBox2->Controls->Add(this->button12);
 			this->groupBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->groupBox2->Location = System::Drawing::Point(191, 179);
+			this->groupBox2->Location = System::Drawing::Point(191, 200);
 			this->groupBox2->Name = L"groupBox2";
 			this->groupBox2->Size = System::Drawing::Size(168, 245);
 			this->groupBox2->TabIndex = 0;
@@ -289,6 +298,7 @@ namespace Project1 {
 			this->button18->Size = System::Drawing::Size(75, 50);
 			this->button18->TabIndex = 6;
 			this->button18->UseVisualStyleBackColor = true;
+			this->button18->Click += gcnew System::EventHandler(this, &MyForm::button18_Click);
 			// 
 			// button17
 			// 
@@ -300,6 +310,7 @@ namespace Project1 {
 			this->button17->TabIndex = 5;
 			this->button17->Text = L".";
 			this->button17->UseVisualStyleBackColor = true;
+			this->button17->Click += gcnew System::EventHandler(this, &MyForm::button17_Click);
 			// 
 			// button16
 			// 
@@ -321,6 +332,7 @@ namespace Project1 {
 			this->button15->TabIndex = 3;
 			this->button15->Text = L"/";
 			this->button15->UseVisualStyleBackColor = true;
+			this->button15->Click += gcnew System::EventHandler(this, &MyForm::button15_Click);
 			// 
 			// button14
 			// 
@@ -354,11 +366,63 @@ namespace Project1 {
 			this->button12->UseVisualStyleBackColor = true;
 			this->button12->Click += gcnew System::EventHandler(this, &MyForm::button12_Click);
 			// 
+			// button19
+			// 
+			this->button19->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 26.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button19->Location = System::Drawing::Point(10, 134);
+			this->button19->Name = L"button19";
+			this->button19->Size = System::Drawing::Size(82, 69);
+			this->button19->TabIndex = 2;
+			this->button19->Text = L"C";
+			this->button19->UseVisualStyleBackColor = true;
+			this->button19->Click += gcnew System::EventHandler(this, &MyForm::button19_Click);
+			// 
+			// button20
+			// 
+			this->button20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button20->Location = System::Drawing::Point(365, 362);
+			this->button20->Name = L"button20";
+			this->button20->Size = System::Drawing::Size(82, 69);
+			this->button20->TabIndex = 3;
+			this->button20->Text = L"tan";
+			this->button20->UseVisualStyleBackColor = true;
+			this->button20->Click += gcnew System::EventHandler(this, &MyForm::button20_Click);
+			// 
+			// button21
+			// 
+			this->button21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button21->Location = System::Drawing::Point(365, 287);
+			this->button21->Name = L"button21";
+			this->button21->Size = System::Drawing::Size(82, 69);
+			this->button21->TabIndex = 4;
+			this->button21->Text = L"cos";
+			this->button21->UseVisualStyleBackColor = true;
+			this->button21->Click += gcnew System::EventHandler(this, &MyForm::button21_Click);
+			// 
+			// button22
+			// 
+			this->button22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button22->Location = System::Drawing::Point(365, 212);
+			this->button22->Name = L"button22";
+			this->button22->Size = System::Drawing::Size(82, 69);
+			this->button22->TabIndex = 5;
+			this->button22->Text = L"sin";
+			this->button22->UseVisualStyleBackColor = true;
+			this->button22->Click += gcnew System::EventHandler(this, &MyForm::button22_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(506, 436);
+			this->ClientSize = System::Drawing::Size(467, 457);
+			this->Controls->Add(this->button22);
+			this->Controls->Add(this->button21);
+			this->Controls->Add(this->button20);
+			this->Controls->Add(this->button19);
 			this->Controls->Add(this->groupBox2);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->textBox1);
@@ -457,10 +521,42 @@ namespace Project1 {
 				try {
 					textBox1->Text = Convert::ToString(a / b);
 				}
-				catch (...) { MessageBox("деление на ноль запрещенно"); }
+				catch (...) { MessageBox::Show("Ќельз€ делить на ноль"); }
 				 
 		}
 	}
 
+	private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
+		
+		textBox1->Text += ",";
+	}
+	private: System::Void button15_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+		a = System::Double::Parse(textBox1->Text);
+		c = '/';
+		textBox1->Text = "";
+	}
+	private: System::Void button18_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		a = System::Double::Parse(textBox1->Text);
+		textBox1->Text = Convert::ToString(System::Math::Sqrt(a));
+	}
+private: System::Void button19_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	textBox1->Text = "";
+}
+private: System::Void button22_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	a = System::Double::Parse(textBox1->Text);
+	textBox1->Text = Convert::ToString(System::Math::Sin(a));
+}
+private: System::Void button21_Click(System::Object^ sender, System::EventArgs^ e) {
+	a = System::Double::Parse(textBox1->Text);
+	textBox1->Text = Convert::ToString(System::Math::Cos(a));
+}
+private: System::Void button20_Click(System::Object^ sender, System::EventArgs^ e) {
+	a = System::Double::Parse(textBox1->Text);
+	textBox1->Text = Convert::ToString(System::Math::Tan(a));
+}
 };
 }
